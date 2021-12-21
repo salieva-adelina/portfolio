@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/block/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,100;1,400;1,600;1,700&family=Roboto&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body >
+    <header class="header">
+        <div class="container"></div>
+        <div class="header__inner">
+            <div class="user">
+                <div class="user__avatar">
+                    <img src="https://via.placeholder.com/40x40" alt="">
+                </div>
+                <div class="user__content">
+                    <div class="user__name">Adelina Salieva</div>
+                    <div class="user__prof">Front-end</div>
+                </div>
+            </div>
+            <nav class="nav" id="nav">
+                <a href="#" class="nav__link active">work</a>
+                <a href="#" class="nav__link">about me</a>
+                <a href="#" class="nav__link">blog</a>
+                <a href="#" class="nav__link">contact</a>
+                <a href="#" class="nav__link nav__link--btn" data-modal="#modal_hire-me">hire me</a>
+            </nav>
+            <button class="burger" type="button" id="navtoggle">
+                <img class="burger__icon" src="/img/burger.svg" alt="menu">
+            </button>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__content">
+                    <h2 class="intro__subtitle"> Hello I'm</h2>
+                    <h1 class="intro__title"> Adelina Salieva</h1>
+                    <div class="intro__text"> Front end deloveper</div>
+
+                    <div class="social">
+                        <a href="#" class="social__link">
+                            <img src="/img/facebook.svg" alt="" class="social__img">
+                        </a>
+                        <a href="#" class="social__link">
+                            <img src="/img/twitter.svg" alt="" class="social__img">
+                        </a>
+                        <a href="#" class="social__link">
+                            <img src="/img/youtube.svg" alt="" class="social__img">
+                        </a>
+                    </div>
+
+                    <a href="#" class="btn" data-modal="#modal_hire-me">HIRE ME</a>
+                    <button class="btn" type="button" data-modal="#modal_resume"> SEE MY RESUME</button>
+                </div>
+                <img class="intro__photo" src="/img/designer_work2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- works-->
+<div class="works">
+    <div class="container">
+        <div class="works__nav">
+            <a href="#" class="works__nav-link" data-filter="all">All</a>
+            <a href="#" class="works__nav-link" data-filter="app">App</a>
+            <a href="#" class="works__nav-link" data-filter="website">Websites</a>
+            <a href="#" class="works__nav-link" data-filter="interaction">Interaction</a>
+        </div>
+
+        <div class="portfolio">
+            <div class="porfolio__col" data-cat="app">
+                 <div class="work" data-modal="#modal_project_1">
+                    <img  class="work__img" src="https://via.placeholder.com/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Category:app</div>
+                        <div class="work__title">
+                            Project title
+                            <time class="work__date" datetime="2021-12-12 23:14">2021</time>
+                        </div>
+                    </div>
+            </div>
+        </div>  
+            <div class="porfolio__col" data-cat="website">
+                <div class="work" data-modal="modal_project_2">
+                    <img  class="work__img" src="https://via.placeholder.com/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Category:website</div>
+                        <div class="work__title">
+                            Project title
+                            <time class="work__date" datetime="2021-12-12 23:14">2021</time>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <div class="porfolio__col" data-cat="interaction">
+                <div class="work">
+                    <img  class="work__img" src="https://via.placeholder.com/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Category:interaction</div>
+                        <div class="work__title">
+                            Project title
+                            <time class="work__date" datetime="2021-12-12 23:14">2021</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="porfolio__col" data-cat="website">
+                <div class="work">
+                    <img  class="work__img" src="https://via.placeholder.com/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Category:website</div>
+                        <div class="work__title">
+                            Project title
+                            <time class="work__date" datetime="2021-12-12 23:14">2021</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="porfolio__col" data-cat="app">
+                <div class="work">
+                    <img  class="work__img" src="https://via.placeholder.com/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Category:app</div>
+                        <div class="work__title">
+                            Project title
+                            <time class="work__date" datetime="2021-12-12 23:14">2021</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="porfolio__col"  data-cat="interaction">
+                <div class="work">
+                    <img  class="work__img" src="https://via.placeholder.com/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Category:interaction</div>
+                        <div class="work__title">
+                            Project title
+                            <time class="work__date" datetime="2021-12-12 23:14">2021</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="porfolio__col"  data-cat="cat">
+                <div class="work">
+                    <img  class="work__img" src="https://via.placeholder.com/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Category:cat</div>
+                        <div class="work__title">
+                            Project title
+                            <time class="work__date" datetime="2021-12-12 23:14">2021</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="porfolio__col"  data-cat="app">
+                <div class="work">
+                    <img  class="work__img" src="https://via.placeholder.com/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Category:app</div>
+                        <div class="work__title">
+                            Project title
+                            <time class="work__date" datetime="2021-12-12 23:14">2021</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="porfolio__col"  data-cat="interaction">
+                <div class="work">
+                    <img  class="work__img" src="https://via.placeholder.com/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Category:interaction</div>
+                        <div class="work__title">
+                            Project title
+                            <time class="work__date" datetime="2021-12-12 23:14">2021</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Porfolio-->   
+        <div class="text-center">
+            <a href="#" class="btn btn--sm"> LOAD MORE WORK</a>
+        </div>
+        
+    </div>
+</div>
+<!-- About-->
+<section class="about">
+    <div class="container">
+        <div class="about__inner">
+            <div class="about__photo">
+                <img class="img" src="https://via.placeholder.com/430x280" alt="">
+            </div>
+            <div class="about__content">
+                <h3 class="about__title">About me</h3>
+                <h2 class="about__bigtitle">Who am I</h2>
+                <div class="about__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde maiores tempora debitis earum quia, necessitatibus eaque est, veniam perferendis magni numquam nam beatae rerum voluptatum. Praesentium nisi aperiam quae sapiente.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ab quod repudiandae odio veritatis laboriosam suscipit repellendus repellat. Ut, laborum mollitia veniam odio accusamus quam rerum dolorum voluptates quisquam odit.</p>
+                </div>
+                <a href="#" class="btn" data-modal="#modal_hire-me">HIRE ME</a>
+                <button class="btn" type="button" data-modal="#modal_resume"> SEE MY RESUME</button>
+            </div>
+
+        </div><!-- About__inner-->
+    </div> <!-- container-->
+</section>
+<!-- reviews-->
+<div class="reviews">
+    <div class="container">
+        <div class="reviews__item">
+            <div class="reviews__text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas tempora numquam consequatur eos animi facere ducimus, maiores quasi veritatis modi assumenda quidem architecto odio debitis quo voluptatem earum reprehenderit temporibus.</p>
+                <div class="reviews__author">
+                    <img class="reviews__photo" src="https://via.placeholder.com/103/333" alt="">
+                    <div class="reviews__name">Olga Butaeva</div> 
+                   <div class="reviews__company">Marjing House</div> 
+                   <div class="reviews__rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- container-->
+</div><!-- reviews-->
+<!--News-->
+<section class="news">
+    <div class="container">
+        <div class="news__header">
+            <h3 class="news__title">Read Me</h3>
+            <div class="news__text">Sometimes i write something smart</div>
+        </div>
+        <div class="articles">
+            <div class="articles__col">
+            <div class="articles__item">
+                <div class="articles__header">
+                    <time class="articles__date">14 <br> december</time>
+                    <a href="#">
+                    <img class="articles__photo" src="https://via.placeholder.com/370x257" alt="">
+                    </a>
+                </div>
+                <div class="articles__content">
+                    <h3 class="articles__title"> <a href="#"> TEN THE BEST APP IN 2021</a></h3>
+                    <div class="articles__cat">CATEGORY</div>
+                    <div class="articles__text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quod quibusdam, earum libero fuga recusandae cumque, distinctio quaerat architecto omnis, nihil fugit eaque soluta necessitatibus nulla facilis at delectus impedit consectetur debitis ea incidunt tempora! Cumque eligendi nihil earum maiores!</p>
+                    </div>
+                </div>
+                <a href="" class="btn btn--sm"id="modal_project_1">Read more</a>
+            </div>
+            </div>
+            <div class="articles__col">
+                <div class="articles__item">
+                    <div class="articles__header">
+                        <time class="articles__date">14 <br> december</time>
+                        <a href="#">
+                        <img class="articles__photo" src="https://via.placeholder.com/370x257" alt="">
+                        </a>
+                    </div>
+                    <div class="articles__content">
+                        <h3 class="articles__title"> <a href="#"> TEN THE BEST APP IN 2021</a></h3>
+                        <div class="articles__cat">CATEGORY</div>
+                        <div class="articles__text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quod quibusdam, earum libero fuga recusandae cumque, distinctio quaerat architecto omnis, nihil fugit eaque soluta necessitatibus nulla facilis at delectus impedit consectetur debitis ea incidunt tempora! Cumque eligendi nihil earum maiores!</p>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn--sm" id="modal_project_1">Read more</a>
+                </div>
+                </div>
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <time class="articles__date">14 <br> december</time>
+                            <a href="#">
+                            <img class="articles__photo" src="https://via.placeholder.com/370x257" alt="">
+                            </a>
+                        </div>
+                        <div class="articles__content">
+                            <h3 class="articles__title"> <a href="#"> TEN THE BEST APP IN 2021</a></h3>
+                            <div class="articles__cat">CATEGORY</div>
+                            <div class="articles__text">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quod quibusdam, earum libero fuga recusandae cumque, distinctio quaerat architecto omnis, nihil fugit eaque soluta necessitatibus nulla facilis at delectus impedit consectetur debitis ea incidunt tempora! Cumque eligendi nihil earum maiores!</p>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn--sm"id="modal_project_1" >Read more</a>
+                    </div>
+                    </div>
+        </div>
+        <div class="news__footer">
+            <a class="news__link" href="#"> see more posts</a>
+        </div>
+    </div><!--container-->
+</section>
+<!--footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__credits">
+                <div class="footer__copyright"> &copy; 2021 UI43 - Free Templates</div>
+                <div class="footer_socials">
+                    <a href="#" target="_blank">
+                        <img src="/img/facebook.svg" height="21" width="24" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="/img/youtube.svg" height="21" width="24" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="/img/instagram.svg" height="21" width="24" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="/img/twitter.svg" height="21" width="24" alt="">
+                    </a>
+                </div>
+             </div> <!--footers__credits-->
+            <nav class="footer__nav">
+                <a href="#" class="footer__nav-link"> Work </a>
+                <a href="#" class="footer__nav-link"> About me </a>
+                <a href="#" class="footer__nav-link"> Blog </a>
+                <a href="#" class="footer__nav-link footer__nav-link--btn" data-modal="#modal_hire-me"> Hire me </a>
+            </nav>
+        </div> <!--footer_inner-->
+    </div><!--container-->
+</footer><!--footer-->
+
+
+<!--Modals-->
+<div class="modal" id="modal_project_1">
+    <div class="modal__dialog">
+        <button class="modal-close-button" data-close>
+            <img src="/img/close.svg" alt="">
+        </button>
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img src="https://via.placeholder.com/790x780" alt="" class="modal-work__photo">
+                    </div>
+                    <div>
+                        <img src="https://via.placeholder.com/790x780/333" alt="" class="modal-work__photo">
+                    </div>
+                </div>    
+            </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Projects title</h3>
+                        <div class="modal-work__info"> category | 2021</div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title"> Client</div>
+                        <div class="modal-work__client-company">Creative Agency</div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi possimus nam corporis exercitationem itaque dolores ipsum alias? Itaque, eum natus.</p>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem sunt incidunt explicabo vero laboriosam tenetur quas. Explicabo voluptates quos recusandae unde reiciendis, corporis nulla, ad voluptatem velit, aut dolore expedita?</p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal__work-btn modal__work-btn-prev slickPrev" type="button">
+                            <img class="modal__work-btn-prev" src="/img/left.svg" alt="" height="11"> 
+                            Previous</button>
+                        <button class="modal__work-btn modal__work-btn-next slickNext" type="button">Next
+                            <img class="modal__work-btn-next" src="/img/right.svg" alt="" height="11">  
+                            </button>
+                    </div>
+                </div><!--modal-work__content-->
+        </div> <!--modal-work-->
+    </div> <!--modal__dialog-->
+</div><!--modal-->
+
+
+<div class="modal" id="modal_resume" >
+    <div class="modal__dialog">
+        <button class="modal-close-button" data-close>
+            <img src="/img/close.svg" alt="">
+        </button>
+        <div class="modal__content">
+            <h3 class="modal__title text-center">RESUME</h3>
+            <div class="text-center">
+                <a href="#" class="btn btn--thin">DOWNLOAD</a>
+                <a href="#" class="btn btn--thin">PRINT</a>
+            </div>
+            <div class="timeline">
+                <div class="timeline__col timeline__col--left ">
+                    <h4 class="timeline__title">EXPERIENS</h4>
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="15-12-2021">2017 - <b>present</b> </time>
+                        <h5 class="timeline__subtitle">Freelancer</h5>
+                        <h5 class="timeline__position">Art Director</h5>
+                        <div class="timeline__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cumque necessitatibus porro quidem repellendus aut. Quos rerum blanditiis alias ratione cum fuga, at sapiente beatae fugit repellendus pariatur ipsum esse porro ullam! Amet, saepe earum. Temporibus dolor, enim culpa numquam, ipsa nesciunt at laboriosam nostrum unde aliquid exercitationem vitae doloremque!</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="15-12-2021">2017 - <b>present</b> </time>
+                        <h5 class="timeline__subtitle">Freelancer</h5>
+                        <h5 class="timeline__position">Art Director</h5>
+                        <div class="timeline__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cumque necessitatibus porro quidem repellendus aut. Quos rerum blanditiis alias ratione cum fuga, at sapiente beatae fugit repellendus pariatur ipsum esse porro ullam! Amet, saepe earum. Temporibus dolor, enim culpa numquam, ipsa nesciunt at laboriosam nostrum unde aliquid exercitationem vitae doloremque!</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="15-12-2021">2017 - <b>present</b> </time>
+                        <h5 class="timeline__subtitle">Freelancer</h5>
+                        <h5 class="timeline__position">Art Director</h5>
+                        <div class="timeline__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cumque necessitatibus porro quidem repellendus aut. Quos rerum blanditiis alias ratione cum fuga, at sapiente beatae fugit repellendus pariatur ipsum esse porro ullam! Amet, saepe earum. Temporibus dolor, enim culpa numquam, ipsa nesciunt at laboriosam nostrum unde aliquid exercitationem vitae doloremque!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline__col timeline__col--right">
+                    <h4 class="timeline__title">EDUCATION</h4>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="15-12-2021">2017 - <b>2021</b> </time>
+                        <h5 class="timeline__subtitle">Logist</h5>
+                        <h5 class="timeline__position">KGTU</h5>
+                    </div>
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="15-12-2021">2021 - <b>2023</b> </time>
+                        <h5 class="timeline__subtitle">IT</h5>
+                        <h5 class="timeline__position">Mephi, Russia</h5>
+                    </div>
+                    <h4 class="timeline__title">Skills</h4>
+                    <div class="progress-bar">
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">UI/UX Desing</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="widht: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">React</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="widht: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">HTML/CSS</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="widht: 98%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">JavaScript</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="widht: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--progress-bar-->
+                    <h4 class="timeline__title">Awards</h4>
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="15-12-2021">2010</time>
+                        <h5 class="timeline__subtitle">Freelancer</h5>
+                        <h5 class="timeline__position">Art Director</h5>
+                    </div>
+                    <div class="timeline__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cumque necessitatibus porro quidem repellendus aut. Quos rerum blanditiis alias ratione cum fuga, at sapiente beatae fugit repellendus pariatur ipsum esse porro ullam! Amet, saepe earum. Temporibus dolor, enim culpa numquam, ipsa nesciunt at laboriosam nostrum unde aliquid exercitationem vitae doloremque!</p>
+                    </div>
+                </div><!--timeline-col-->
+            </div><!--timeline-->
+            <div class="text-center">
+                <a href="#" class="btn" data-modal="#modal_hire-me">Hire me</a>
+            </div>
+        </div><!--modal__content-->
+        
+    </div> <!--modal__dialog-->
+</div><!--modal-->
+
+<div class="modal"  id="modal_hire-me" >
+    <div class="modal__dialog modal__dialog--sm">
+        <button class="modal-close-button" data-close>
+            <img src="/img/close.svg" alt="">
+        </button>
+        <div class="contact">
+                <div class="contact__left">
+                    <h3 class="modal__title modal__title--mb-0">LET'S TALK</h3>
+                    <h4 class="modal_subtitle">CALL ME OR SEND ME A REQUEST</h4>
+                    <ul class="contact__info">
+                        <li class ="contact__info-item">
+                            <img class ="contact__info-icon" src="/img/phone.svg" style="width: 17px; height: 17px;" alt="phone">
+                            8(901) 354 0512
+                        </li>
+                        <li class ="contact__info-item">
+                            <img class ="contact__info-icon" src="/img/mail.svg" style="width: 17px; height: 17px;" alt="">
+                            rustamovna.a3@gmail.com
+                        </li>
+                </ul>
+
+                <form class="form" action="/" method="post">
+                    <div class="form__group">
+                        <label for="input-text" class="form__label">Adress e-mail</label>
+                        <input type="text" name="input-email" class="form__input" placeholder="Adress e-mail " id="input-email">
+                    </div>
+                   
+                    <div class="form__group">
+                        <label for="input-text" class="form__label">Request</label>
+                        <textarea name="input-text" id="input-text" class="form__textarea" placeholder="Type your request"></textarea>
+                    </div>
+                    <div class="text-right">
+                         <button class="btn" type="submit">Send</button>
+                    </div>
+                   
+                </form>
+                </div>            
+        </div> <!--contact-->
+    </div> <!--modal__dialog-->
+</div><!--modal-->
+
+
+<!--JS-->
+<script src="/js/slick.js"></script>
+<script src="/js/app.js"></script>
+
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+</body>
+</html>
